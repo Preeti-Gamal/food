@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">P.Shop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bakery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="banner-title">
+              <h1>We Are Bakery Shop</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum
+                dolor sit, amet consectetur adipisicing
+              </p>
+              <a href="#" onclick="toggle();"><i class="fa fa-play"></i></a>
+              <hr />
+            </div>
+          </div>
+          <div class="col-md-7"><img src="55.png" alt="pasta"</div>
+        </div>
+      </div>
+    </header>
+    <section class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="item">
+              <img src="4.png" alt="pzza" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <img src="3.png" alt="cup" />
+              <p>Cupcake</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <img src="1.png" alt="biss" />
+              <p>Biscuit</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <img src="5.png" alt="green" />
+              <p>Green Seck</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="trailer">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/voLuGOQzTCs?start=5"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+      <i onclick="toggle();" class="fa fa-window-close"></i>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      function toggle() {
+        var trailer = document.querySelector(".trailer");
+        trailer.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
